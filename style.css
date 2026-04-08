@@ -1,0 +1,133 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* BODY */
+body{
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* CONTAINER */
+.container{
+    width:950px;
+    background:#ffffff;
+    padding:30px;
+    border-radius:16px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* HEADINGS */
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+/* FORM */
+form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+/* INPUTS */
+input, select{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus, select:focus{
+    border-color:#667eea;
+    box-shadow:0 0 6px rgba(102,126,234,0.4);
+}
+
+/* BUTTON */
+button{
+    grid-column:span 2;
+    padding:12px;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    border:none;
+    color:#fff;
+    font-size:15px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.9;
+    transform:scale(1.02);
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* TABLE HEADER */
+thead{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:#fff;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+/* ROW */
+tbody tr{
+    border-bottom:1px solid #eee;
+    transition:0.3s;
+}
+
+tbody tr:hover{
+    background:#f5f7ff;
+}
+
+/* BUTTONS */
+a{
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:6px;
+    font-size:13px;
+    margin:0 3px;
+}
+
+/* EDIT */
+.edit{
+    background:#28a745;
+    color:#fff;
+}
+
+/* DELETE */
+.delete{
+    background:#dc3545;
+    color:#fff;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .container{
+        width:95%;
+    }
+    form{
+        grid-template-columns:1fr;
+    }
+}
